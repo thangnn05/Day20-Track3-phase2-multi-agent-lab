@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m venv .venv)",
+      "Bash(.venv/Scripts/activate)",
+      "Bash(pip install:*)",
+      "Bash(.venv/Scripts/python -m pip install -e \".[dev,llm]\")",
+      "Bash(.venv/Scripts/python -m pytest tests/ -v)"
+    ]
+  }
+}
